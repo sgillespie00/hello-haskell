@@ -6,7 +6,7 @@
   };
 
   outputs = { self, nixpkgs, flake-utils, haskellNix }@inputs:
-    flake-utils.lib.eachDefaultSystem (system:
+    flake-utils.lib.eachSystem [ "aarch64-linux" ] (system:
       let
         overlays = [ haskellNix.overlay ];
 
