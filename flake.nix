@@ -38,5 +38,10 @@
           inherit project;
 
           packages.default = flake.packages."hello-haskell:exe:hello-haskell";
+
+          hydraJobs.required = pkgs.releaseTools.aggregate {
+            name = "required";
+            constituents = pkgs.lib.collect pkgs.lib.isDerivation flake.hydraJobs;
+          };
         });
 }
