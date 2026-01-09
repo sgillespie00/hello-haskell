@@ -1,2 +1,2 @@
 # hello-haskell
-A minimal haskell project
+A minimal haskell project, that automatically notifies CI!
