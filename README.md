@@ -1,2 +1,8 @@
 # hello-haskell
-A minimal haskell project
+A minimal haskell project and some CI
+and others
+more text
+more text
+more text
+more text
+more text
